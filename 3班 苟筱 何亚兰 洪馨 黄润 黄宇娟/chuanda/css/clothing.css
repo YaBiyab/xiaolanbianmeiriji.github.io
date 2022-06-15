@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+		html,body{
+			  height: 100%;
+			 }
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins',sans-serif;
+	
+	}
+	.container {background: #CDBBDE;
+			width: 100%;
+			height: 100%;
+	        display: flex;
+			justify-content: center;
+			}
+
+
+	nav {display: inline-block;
+  		position: absolute;
+  		background: #FDFAF2;
+	  	border-radius: 50px;
+	  	padding: 10px;
+	  	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+	  	margin-top: 20px;
+		margin-left: 30px;
+	 	align-items: center;
+  		justify-content:space-between;
+  		width: 90%;
+		}
+		nav ul{
+		background-color: #FDFAF2;
+		}
+		nav ul li {
+		background-color: #FDFAF2;
+		}
+		nav ul li {
+		  list-style: none;
+		  display: inline-block;
+		  padding: 5px 7.1%;
+		  margin-left: 1.6%;
+		  font-size: 24px;
+		  font-weight: 550;
+		  color: #A37B9B;
+		  cursor: pointer;
+		  position: relative;
+		  z-index: 0;
+		  transition: color 0.5s;
+		}
+
+		nav ul li::after {
+		  content: '';
+		  background: #F2C8CC;
+		  width: 100%;
+		  height: 100%;
+		  border-radius: 30px;
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  z-index: -1;
+		  opacity: 0;
+		  transition: top 0.5s,opacity 0.5s;
+		}
+
+		nav ul li:hover{
+		  color: #fff;
+		}
+
+		nav ul li:hover::after{
+		  top: 50%;
+		  opacity: 1;
+		}
+
+			* {
+				margin : 0;
+				padding: 0;
+				background-color: #CDBBDE;
+			}
+			.frame{
+				width           : 1515px;
+				height          : 8000px;
+				height          : 900px;
+				display         : flex;
+				justify-content : center;
+				align-items     : center;
+			}
+			.channel {
+				position   : absolute;
+				width      : 80%;
+				text-align: center;
+				top        : 50%;
+				left       : 50%;
+				transform  : translate(-50%, -250px);
+				font-size  : 30px;
+				font-weight: bold;
+				color      : #fff;
+			}
+			.box {
+				position              : relative;
+				width                 : 900px;
+				height                : 550px;
+				overflow           	  : hidden;
+				z-index               : 0;
+				box-shadow            :0 0 0 10px #fff,
+					5px 5px 0 10px rgba(0, 0, 0, 0.1);
+			}
+			.box::after {
+				position        : absolute;
+				content         : '';
+				width           : 100%;
+				height          : 1px;
+				background-color: rgba(255, 255, 255, .35);
+				bottom          : 25px;
+				z-index         : 8888;
+				
+			}
+			/* 元素box相同大小 */
+			.box .item {
+				position: absolute;
+				width   : 600px;
+				height  : 550px;
+				top     : 0;
+				left    : 0;
+			}
+			/* 让单选框离开显示区域 */
+			input[type=radio] {
+				transform : translateY(-100px);
+			}
+			label {
+				position              : absolute;/*圆圈的大小形状*/
+				width                 : 20px;
+				height                : 20px;
+				background-color      : rgba(255, 255, 255, .35);
+				/* 鼠标 */
+				cursor                : pointer;
+				bottom                : 15px;
+				border-radius         : 50%;
+				left                  : calc((var(--i) - 1) * 168px + 20px);/*圆圈间距*/
+				z-index               : 9999;
+				transition            : all 0.5s;
+			}
+			label:hover {
+				background-color: rgba(255, 255, 255, .6);
+			}
+			input[type=radio]:checked+label {
+				background-color: #fff;
+				box-shadow      : 0 0 0 6px rgba(255, 255, 255, .5);
+			}
+			.img {
+				position           : absolute;
+				width              : 900px;
+				height             : 550px;
+				top                : 0;
+				left               : 0;
+				overflow: hidden;
+			}
+			.img img {
+				position  : absolute;
+				transform : translateX(900px);/*图片间距*/
+				/* z-index在动画中变化挺特殊这里直接用0s */
+				transition: all .15s, z-index 0s;
+			}
+			input[type=radio]:checked~.img img {
+				transform: translateX(0px);
+				z-index  : 777;
+			}
+			.img .right {
+				position           : absolute;
+				width              : 600px;
+				height             : 1600px;
+				z-index            : 778;
+				right              : 0;
+				background-image   : radial-gradient(rgba(255, 255, 255, .6), transparent);
+				background-size    : 600px 600px;
+				background-repeat  : no-repeat;
+				background-position: -1px -1px;
+				transform          : translateX(600px);/*白底的大小*/
+				/* 这里时间比img要长一些 */
+				transition         : all 0.35s;
+				font-size: 40px;
+				color: #FFFFFF;
+				text-align: center;
+				line-height: 80px;
+			}
+			.img .p{
+				position           : absolute;
+				width              : 600px;
+				height             : 1600px;
+				z-index            : 778;
+				right              : 0;
+				background-image   : radial-gradient(rgba(255, 255, 255, .6), transparent);
+				background-size    : 600px 600px;
+				background-repeat  : no-repeat;
+				background-position: -1px -1px;
+				transform          : translateX(600px);/*白底的大小*/
+				/* 这里时间比img要长一些 */
+				transition         : all 0.35s;
+
+				font-size  : 20px;
+				color      : #A37B9B;
+				text-align : justify;
+				line-height: 60px;
+				text-indent: 2em;
+				margin-top : 80px;
+			}
+			input[type=radio]:checked~.img .p {
+				transform    : translateX(0px);
+			}
+			input[type=radio]:checked~.img .right {
+				transform    : translateX(0px);
+			}/*框架*/
+			
+
+			.title{
+				font-size  : 30px;
+				font-weight: bold;
+				color      : #fff;
+				text-align :center;
+				margin     : 30px;
+			}/*标题*/
+			.small{font-size  : 25px;
+				font-weight: bold;
+				color      : #F2C8CC;
+				text-align :center;
+				margin:20px;
+			}/*小标题*/
+			.name{color    : #fff;
+				font-weight: bold;
+				font-size  : 20px;
+				margin     : 20px 300px 20px 300px;
+				text-indent: 36px;
+				text-align: justify;
+			}/*内容文字设置*/
+			.role{
+				margin-left:400px;
+			}
+			.role1{
+					margin-left:350px;
+			}
+			.role2{
+					margin-left:550px;
+			}/*图片的页边距*/
+			.footer{
+				text-align: center;
+			    margin-top: 100px;
+			}
+			p a{text-decoration: none;/*清除链接原有样式*/
+			    color: rgba(7,7,7,1.00);}
+			.link a{text-decoration: none;/*清除链接原有样式*/
+			    color: rgba(7,7,7,1.00);}
+.Footer{
+	align-items: center;
+	position: relative;
+	display: flex;
+	background: #FDFAF2;
+	width: 1525px;
+}
+.right{
+	background-color:rgba(253,250,242,1.00);
+	margin-left: 500px;
+}
+.left{
+	background-color:rgba(253,250,242,1.00);
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-left: 300px;
+}
+.left img{
+	width: 150px;
+}
+

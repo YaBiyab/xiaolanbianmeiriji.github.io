@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+/*==============================导航========================================*/
+html,body{
+	height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.container {background: #CDBBDE;
+			width: 100%;
+			height:6000px;
+	        display: flex;
+			justify-content: center;
+}
+nav {
+  position: absolute;
+  background: #FDFAF2;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  align-items: center;
+  justify-content:space-between;
+  width: 90%;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 7.1%;
+  margin-left: 1.6%;
+  font-size: 24px;
+  font-weight: 550;
+  color: #A37B9B;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  transition: color 0.5s;
+}
+nav ul li::after {
+  content: '';
+  background: #F2C8CC;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s,opacity 0.5s;
+}
+nav ul li:hover{
+  color: #fff;
+}
+nav ul li:hover::after{
+  top: 50%;
+  opacity: 1;
+}
+/*==============================最上面图片========================================*/
+.top{
+    margin-top: 100px;
+	margin-left:-50px;
+    }
+/*================================黄的板块======================================*/
+.step{margin-top:720px;
+	  margin-left: -1450px;
+      font-family: "楷体";
+	  font-size: 20px;
+	  color:#A37B9B;
+	  width: 1400px;
+	 background: #FDFAF2;
+     }
+/*===============线======================*/
+.line{margin-top: 120px;}
+.stype img{float:left;
+	       margin:60px;
+}
+.title{margin-top: 20px;
+	margin-left: 20px;}
+.step .titletwo{margin-left: 20px;
+          margin-top: 50px;
+}
+/*==============================第二步========================================*/
+.hung-white{  margin-left: 80px;
+	          margin-top: 50px;
+				position: relative; /*相对定位*/
+				display: flex; /*盒模型*/
+				/*justify-content: left; /*文档X轴布局*/
+				/*align-items: center; *//*文档Y轴布局*/
+				}
+	.hung-white .card{position: relative; /*相对定位*/
+				}	
+	.hung-white .card .face1{width: 350px;
+					transition: 0.5s; /*过渡时间*/
+					}
+	.face2{height:320px;
+		   z-index: 10px;
+		   width:350px;
+		   transition: 0.5s; /*过渡时间*/
+		   }
+	.hung-white.card .face.face1{position: relative; 
+								display: flex; 
+								justify-content: center; 
+								align-items: center; 
+								z-index: 1px; 
+								transform: translateY(100px); /*2D转换，Y轴移动*/
+								} 
+	.hung-white .card:hover .face.face1{background:rgba(217,212,212,1.00); 
+										transform: translateY(0); /*此处为card标签悬停时，内容1复位*/
+									   }
+	.hung-white .card .face.face1 .web{opacity:1; /*透明度*/
+									  transition: 0.5s; 
+									  }
+	.hung-white .card:hover .face.face1 .web{opacity: 1; /*此处为card标签悬停时，更改封面的透明度*/
+											}
+
+	.hung-white .card .face.face2{position: relative; 
+								background:rgba(255,255,255,1.00); 
+								display: flex; 
+								justify-content: center; 
+								align-items: center; 
+								padding:20px; 
+								box-sizing: border-box; /*设置盒子模型内布局，此处为元素的内边距盒边框不会影响最终大小*/
+								box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /*阴影*/
+								transform: translateY(0); /*2D转换，Y轴移动*/
+								z-index: 1px;opacity: 0;
+						     	}
+	.hung-white .card:hover .face.face2{transform: translateY(10px);
+										opacity: 1; /*此处为card标签悬停时，内容2复位*/
+										}
+	.hung-white .card .face.face2 p{margin: 0; 
+									font-size:20px;
+									letter-spacing: 1.35px;
+									line-height:1.8;
+									}
+	.text{text-align: center;
+		  font-size: 15px;}
+
+.hung{margin-left:100px;
+	          margin-top:3px;
+				position: relative; /*相对定位*/
+				display: flex; /*盒模型*/
+				justify-content:left; /*文档X轴布局*/
+				}
+.hungan{margin-left: -1250px;
+	          margin-top:720px;
+				position: relative; /*相对定位*/
+				display: flex; /*盒模型*/
+				/*justify-content:left; /*文档X轴布局*/
+				/*align-items: center; *//*文档Y轴布局*/
+				}
+.you {margin-left: 100px;
+	          margin-top:720px;
+				position: relative; /*相对定位*/
+				display: flex; /*盒模型*/
+}
+.min {margin-left: 100px;
+	          margin-top:720px;
+				position: relative; /*相对定位*/
+				display: flex; /*盒模型*/
+}
+.title2{margin-top: 50px;
+	   margin-left: 20px;}
+/*==============================第三步========================================*/
+.one{width: 400px;
+	height: 300px;
+	margin-top: 40px;
+	margin-left: 50px;
+	font-size: 17px;
+	background:#FFE0E0;
+    }
+.title3{margin-top:20px;
+	text-align: center;
+	padding:8px;
+       }
+.page{margin-left: 10px;
+	  padding: 5px;
+	  letter-spacing: 0.5px;
+     }
+.two{width: 400px;
+	height: 300px;
+	margin-top: -321px;
+	margin-left: 500px;
+	font-size: 17px;
+	background:#FFE0E0;
+    }
+.three{width: 400px;
+	height: 300px;
+	margin-top: -321px;
+	margin-left: 950px;
+	font-size: 17px;
+	background:#FFE0E0;
+    }
+.four{width: 400px;
+	height: 300px;
+	margin-top: 30px;
+	margin-left: 50px;
+	font-size: 17px;
+	background:#FFE0E0;
+    }
+.five{width: 400px;
+	height: 300px;
+	margin-top: -321px;
+	margin-left: 500px;
+	font-size: 17px;
+	background:#FFE0E0;
+    }
+.six{width: 400px;
+	height: 300px;
+	margin-top: -321px;
+	margin-left: 950px;
+	font-size: 17px;
+	background:#FFE0E0;
+    }
+/*=============================好物分享========================================*/
+.sth1{margin-top: 50px;
+	 margin-left:50px;
+      }
+.sth2{margin-top: -540px;
+	 margin-left:500px;
+      }
+.sth3{margin-top: -540px;
+	 margin-left:950px;
+      }
+.sth4{margin-top: 30px;
+	 margin-left:50px;
+      }
+.sth5{margin-top:-539px;
+	 margin-left:500px;
+      }
+.sth6{margin-top: -539px;
+	 margin-left:950px;
+      }
+/*==============================最后========================================*/
+.last1{width:430px;
+	margin-top:50px;
+	margin-left:200px;
+	font-size: 18px;
+}
+.last2{width:430px;
+	margin-top:-425px;
+	margin-left:780px;
+	font-size: 18px;
+}
+.link a{text-decoration: none;
+			font-size: 18px;
+			letter-spacing: 0.5px;
+	         color:#A37B9B;
+			}
+.Footer{
+	align-items: center;
+	position: relative;
+	display: flex;
+	background: #FDFAF2;
+	width: 1525px;
+}
+.right{
+	background-color:rgba(253,250,242,1.00);
+	margin-left: 500px;
+}
+.left{
+	background-color:rgba(253,250,242,1.00);
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-left: 300px;
+}
+.left img{
+	width: 150px;
+}

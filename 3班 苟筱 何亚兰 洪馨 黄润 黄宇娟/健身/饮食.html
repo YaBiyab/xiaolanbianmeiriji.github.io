@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>管住嘴</title>
+		<style>
+			body{background:rgba(219,205,219,1.00)}
+			li{list-style: none}
+			/*百叶窗整体*/
+			.box{width: 1050px;height:500px;overflow: hidden;transition: all 0.3s; margin-left: 14%;}
+			/*单张图片*/
+			.box li{float: left;width: 200px;height: 200px; position: relative;transition: all 0.3s;}
+			/*百叶窗文字*/
+			.box li .text{position: absolute;left: 0;bottom:-300px;font-size: 16px;color: aliceblue;width:100%; height: 30px;text-align: center;line-height: 30px; background-color:rgba(238,141,236,1.00)}
+			/*鼠标移至图片的变化*/
+			.box:hover li{width:64px;}
+			.box li:hover{width: 700px;}
+			/*卡片集合*/
+			/*整体卡片*/
+			.all{width: 1100px;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;transform-style: preserve-3d;margin-left: 15%;margin-top: 6%;}
+			/*单张卡片样式*/
+			.all .card{position: relative;width: 320px;height:320px;margin: 20px;transform-style: preserve-3d;perspective: 1000px;}
+			/*卡片翻转*/
+			.all .card .cardbox{position: absolute;top:0;left:0;width: 100%;height: 100%;transform-style: preserve-3d;transition: 1s ease;}
+			/*卡片翻转*/
+			.all .card:hover .cardbox{transform: rotateY(180deg)}	
+			/*图片样式*/
+			.all .card .cardbox .imgbox img{position: absolute;top:0;left:0;width: 100%;height: 100%;object-fit: cover;}
+			/*图片背面黑色*/
+			.all .card .cardbox .contenbox{position: absolute;top:0;left:0;width: 100%;height:100%;background: rgba(49,45,45,1);backface-visibility: hidden;display: flex;justify-content: center;align-items: center;transform-style: preserve-3d;transform: rotateY(180deg)}
+			/*卡片背后文字背景*/
+			.all .card .cardbox .contenbox div{transform-style: preserve-3d;padding: 30px;background:rgba(238,141,236,1.00);transform: translateZ(100px);width:290px;height:200px}
+			/*卡片背面文字样式*/
+			.all .card .cardbox .contenbox div p{color:aliceblue}
+			
+			/*小导航*/
+			 a:link,a:visited
+    {
+	margin-left: 1350px;	
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:rgba(219,140,225,1.00);
+    width:120px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    }
+    a:hover,a:active
+    {
+    background-color:rgba(186,73,223,1.00);
+    }
+			/*边框样式*/
+			div.img{ margin: 250px;margin-top: 50px;margin-bottom: 50px; border: 2px solid #000000; height: auto;width: auto;float:left;text-align: center;} 
+			/*框中图片样式*/
+			div.img img{display: inline;margin: 20px;}
+			/*框中文字布局*/
+			div.desc{ text-align:center;font-weight: normal; width: 1050px;margin: 4px;}   
+			h1{position:absolute;color: rgba(208,95,236,1.00);font-size: 50px}
+			h2{margin-left: 150px;margin-bottom: -60px;color: rgba(238,141,236,1.00)}
+
+		
+			
+		</style>
+	</head>
+
+	<body>
+		<h1>管住嘴</h1>
+		<div class="img">
+				<img src="图片/QQ图片20220606215517.jpg" alt="" width="379" height="310">
+				<div class="desc">
+				
+					管住嘴不等于随意节食，也不是随意把三餐变成两餐。节食后人体的代谢率“被迫”下降，而脂肪合成和贮藏的功能却有可能增强。同时，节食导致多种营养素长期供应不足，会让你在营养不良的道路上越走越远。管住嘴也不是不吃肉，肉类比起碳水化合物或蔬菜，更具饱腹感，同时还有助于降低餐后血糖反应。瘦肉也是优质的蛋白质来源，充足的蛋白质摄入，会在减脂饮食结构调整时，帮我们缓解“饥饿感”，减少“管不住嘴“的情况发生。虽然不吃主食短期内体重秤上的数字往下掉，但你减掉的并不是真正的脂肪，并且身体会出现记忆力减退、情绪暴躁，更重要的是，一旦你恢复了正常饮食，体重会迅速反弹。真正的管住嘴是在热量摄入一定的情况下保证营养的丰富。
+
+				</div>
+			</div>
+		    <h2>饮食推荐</h2>
+		  
+			<!--卡片-->
+			<div class="all">
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605183625.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>健身与蛋白质<br>健身与蛋白质不同植物蛋白相互搭配，可提高植物蛋白的利用率。一般来说增肌期蛋白质的需要量增加到每天每公斤体重1.6 克以上（你体重是100Kg，那么你每天需要摄入160g的蛋白质），减脂期蛋白质的需求量增加到 2克以上（如果你的体重是100kg，那么你每天需要摄入 200kg以上的蛋白质）。
+
+</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605175647.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p> 健身与碳水化合物<br>碳水化合物是主要的能量来源，同时合理的摄入碳水化合物有助于你运动的恢复和肌肉的生长。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+					<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605181833.jpg"  alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>健身与脂肪<br>运动时，血糖和肌糖原优先供能，运动20分钟后，肌肉才能最大程度地利用脂肪。不同运动强度时，脂肪参与供能的比例不同，比如以最大心率的50%的强度运动时，每分钟燃烧7千卡的 能量，其中90%的能量来源于脂肪。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605175639.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>健身与维生素<br>维生素c、维生素e、β-胡萝卜 素、番茄红素、锰、硒等可防止自由基对机体的 伤害。维生素b1、维生素b2、维生素pp 等b 族 维生素与能量代谢密切相关。
+
+</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605175635.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>健身与水<br>运动前2小时，补充250-500ml 的液体，运动前即刻补充125-250 的液体;运动中每隔15-20分钟补充120-250ml。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605184038.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>健身与膳食纤维<br>膳食纤维是一类不能被人体消化吸收的多糖。它在控重方面具有如下的作用：增加饱腹感;减少进食后胰岛素的变化幅度;消化吸收富含膳食纤维的食物会消耗更多的热量;降低胆固醇和甘油三酯具有清肠的作用。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		   <div>
+			    <a href="Untitled-1.html" target="_blank">返回</a>
+			   
+		   </div>
+	</body>
+</html>

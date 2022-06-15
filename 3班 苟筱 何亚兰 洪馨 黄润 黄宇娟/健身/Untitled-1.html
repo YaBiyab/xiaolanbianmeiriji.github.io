@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小兰健身</title>
+	<style>
+		
+		*{margin: 0;padding:0;}
+		body{display: flex;/*justify-content:center;align-items: center;*/background: #CDBBDE;height: 630px;position: relative;}
+		.daohang{background: #CDBBDE;
+			width: 100%;
+			height: 20px;
+			height: 100%;
+	       /* display: flex;*/
+			justify-content: center;
+			margin-top: 225px;
+
+			}
+			
+		nav {
+				  position: absolute;
+				  background: #FDFAF2;
+				  border-radius: 50px;
+				  padding: 10px;
+				  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+				  margin-top: -200px;
+			      margin-left:70px;
+				  align-items: center;
+				  justify-content:space-between;
+				  width: 90%;
+  
+}
+			nav ul li {
+				
+  list-style: none;
+  display: inline-block;
+  padding: 5px 7.1%;
+  margin-left: 1.6%;
+  font-size: 24px;
+  font-weight: 550;
+  color: #A37B9B;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  transition: color 0.5s;
+}
+			nav ul li::after {
+  content: '';
+  background: #F2C8CC;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s,opacity 0.5s;
+}
+			nav ul li:hover{
+  color: #fff;
+}
+			nav ul li:hover::after{
+  top: 50%;
+  opacity: 1;
+}
+		
+		.container{/*position: relative;*/width:700px;height:100px;/*display: flex;*//*justify-content: center;align-items: center;*/flex-wrap: wrap;padding: 15px;margin-top: 100px;}
+		.container .card{position: relative;max-width: 350px;height:130px;left: -270px; background:rgba(243,241,241,1.00);margin-left: 220px;margin-top: 180px;/*margin: 180px 180px;*/padding:25px 20px;display:flex;flex-direction: column;box-shadow: 0 5px 202px rgba{0,0,0,0.5};transition: 0.3s ease-in-out}
+		.container .card:hover{height:50px;}
+		.container .card .imgBx{position: relative;width: 380px;height: 350px;top:-100px; z-index:1;box-shadow: 0 5px 20px rgba(0,0,0,0.2);}
+		.container .card .imgBx img{max-width: 100%;border-radius: 4px;}
+		.container .card .content{width: 340px; position: relative;padding: 10px 15px;text-align: center;color:#111;visibility:hidden;opacity: 0;transition: 0.3s ease-in-out;}
+		.container .card:hover .content{visibility: visible;opacity:1;margin-top: -50px;transform-delay:0.3s }
+		
+		a:link {color:#D97EEF;}    /* unvisited link */
+    a:visited {color:rgba(226,145,238,1.00);} /* visited link */
+    a:hover {color:#FF00FF;}   /* mouse over link */
+    a:active {color:rgba(210,136,235,1.00);}  /* selected link */
+	.Footer{
+	align-items: center;
+	position: relative;
+	display: flex;
+	background: #FDFAF2;
+	margin-top: 720px;
+	margin-left: -1525px;
+	
+}
+.right{
+	margin-left: 500px;
+}
+.left{margin-bottom: 15px;
+	margin-top: 15px;
+	margin-left: 350px;
+		}
+.left img{
+	width: 150px;
+}	
+	</style>
+</head>
+
+<body>
+	<div class="daohang">
+			<nav>
+				<ul>
+					<a href="../首页/首页.html" style="text-decoration: none;"><li>首页</li></a>
+					<a href="Untitled-1.html" style="text-decoration: none;"><li>健身</li></a>
+					<a href="../chuanda/clothing.html" style="text-decoration: none;"><li>穿搭</li></a>
+					<a href="../护肤/导航.html" style="text-decoration: none;"><li>护肤</li></a>
+					<a href="../小兰变美日记-美妆/04.html" style="text-decoration: none;"><li>美妆</li></a>
+				</ul>
+			</nav>
+		</div>
+
+	   <div class="container">
+			<div class="card">
+				<div class="imgBx">
+					<a href="饮食.html"><img src="图片/guanzhuzui.jpg" alt="">	
+				</div>
+				<div class="content">
+					<h2>
+					 <a href="饮食.html" target="_blank">管住嘴</a>
+					</h2>
+					<p>拥有健康和好的身材，从吃开始。脂肪、蛋白质、碳水化合物是人体所需的三大营养物质，只有均衡搭配，控制热量的摄入才不会让脂肪堆积，将体脂控制在在健康的范围，塑造健康身线。</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="card">
+				<div class="imgBx">
+				 <a href="运动.html"><img src="图片/paobu.jpg" alt="">
+				</div>
+				<div class="content">
+					<h2> <a href="运动.html" target="_blank">迈开腿</a></h2>
+					<p>迈开腿，消耗体内多余的脂肪，维持热量的消耗大于吸收，便能达到减脂的效果。不存在局部瘦身，但你可以局部塑形，通过特定的锻炼，可以让某一局部的肌肉更发达，线条更流畅。</p>
+				</div>
+			</div>
+		</div>
+			<footer>
+			<div class="Footer">
+				<div class="left">
+					<img src="../导航/二维码.jpg" alt="" class="ma">	
+					<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多资讯</h4>
+					<h4>&nbsp;请关注我们的公众号</h4>
+				</div>
+				<div class="right">
+					<h3>&copy;小兰变美日记</h3>
+					<hr>
+					<br>
+					<h4>联系我们</h4>
+					<br>
+					<p>邮箱：865673458@qq.com</p>
+					<br>
+					<p>电话：18116719870</p>
+					<br>
+					<p>地址：四川省南充市顺庆区西华师范大学</p>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

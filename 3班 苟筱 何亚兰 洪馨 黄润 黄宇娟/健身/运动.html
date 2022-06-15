@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>迈开腿</title>
+		<style>
+			body{background:rgba(219,205,219,1.00);}
+			li{list-style: none}
+			/*百叶窗整体*/
+			.box{width: 1050px;height:500px;overflow: hidden;transition: all 0.3s; margin-left: 14%;}
+			/*单张图片*/
+			.box li{float: left;width: 200px;height: 200px; position: relative;transition: all 0.3s;}
+			/*百叶窗文字*/
+			.box li .text{position: absolute;left: 0;bottom:-300px;font-size: 16px;color: aliceblue;width:100%; height: 30px;text-align: center;line-height: 30px; background-color:rgba(238,141,236,1.00)}
+			/*鼠标移至图片的变化*/
+			.box:hover li{width:64px;}
+			.box li:hover{width: 700px;}
+			/*卡片集合*/
+			/*整体卡片*/
+			.all{width: 1100px;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;transform-style: preserve-3d;margin-left: 15%;margin-top: 6%;}
+			/*单张卡片样式*/
+			.all .card{position: relative;width: 320px;height:320px;margin: 20px;transform-style: preserve-3d;perspective: 1000px;}
+			/*卡片翻转*/
+			.all .card .cardbox{position: absolute;top:0;left:0;width: 100%;height: 100%;transform-style: preserve-3d;transition: 1s ease;}
+			/*卡片翻转*/
+			.all .card:hover .cardbox{transform: rotateY(180deg)}	
+			/*图片样式*/
+			.all .card .cardbox .imgbox img{position: absolute;top:0;left:0;width: 100%;height: 100%;object-fit: cover;}
+			/*图片背面黑色*/
+			.all .card .cardbox .contenbox{position: absolute;top:0;left:0;width: 100%;height:100%;background: rgba(49,45,45,1);backface-visibility: hidden;display: flex;justify-content: center;align-items: center;transform-style: preserve-3d;transform: rotateY(180deg)}
+			/*卡片背后文字背景*/
+			.all .card .cardbox .contenbox div{transform-style: preserve-3d;padding: 30px;background:rgba(238,141,236,1.00);transform: translateZ(100px);width:290px;height:200px}
+			/*卡片背面文字样式*/
+			.all .card .cardbox .contenbox div p{color:aliceblue}
+			
+			/*小导航*/
+			 a:link,a:visited
+    {
+	margin-left: 1350px;	
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:rgba(219,140,225,1.00);
+    width:120px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    }
+    a:hover,a:active
+    {
+    background-color:rgba(186,73,223,1.00);
+    }
+			/*边框样式*/
+			div.img{ margin: 250px;margin-top: 50px;margin-bottom: 50px; border: 2px solid #000000; height: auto;width: auto;float:left;text-align: center;} 
+			/*框中图片样式*/
+			div.img img{display: inline;margin: 20px;}
+			/*框中文字布局*/
+			div.desc{ text-align:center;font-weight: normal; width: 1050px;margin: 4px;}   
+			h1{position: absolute;color: rgba(208,95,236,1.00);font-size: 50px}
+			h2{margin-left: 150px;margin-bottom: -60px;color: rgba(238,141,236,1.00)}
+
+			
+		</style>
+	</head>
+
+	<body>
+		<h1>迈开腿</h1>
+		<div class="img">
+				<img src="图片/QQ图片20220606223711.jpg" alt="峨眉山" width="379" height="310">
+				<div class="desc">
+				
+					运动健身可以减肥，除去身体多余的脂肪，增强肌肉的含量，塑造完美的身材。增加身体的免疫力，提高五脏六腑的功能，特别是心脏、肺部、胃肠道的功能，经常健身的人很少得冠心病、肺部咳嗽、呼吸困难等等。可以愉悦心情，经常健身的人通常都能保持一个快乐的心情，也有利于工作。健身可以促进睡眠，缓解轻度的疲劳，可以促进晚上保持一个很好的睡眠状态。健身一定要采取正确的办法，不要急于求成，要采取循序渐进的原则，采取科学的健身方式。
+
+
+				</div>
+			</div>
+		    <h2>运动推荐</h2>
+			<!--卡片-->
+			<div class="all">
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605184733.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>跑步<br>跑步能够提升身体的免疫能力，并且经常跑步还能够增加身体褪黑素的水平，对于睡眠质量也能够起到比较好的改善效果，。跑步还能帮助增加肺活量，并且有助于促使身体中的脂肪快速燃烧，有利于保持优美的体型，不仅能够达到减肥的功效。
+
+
+</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605185149.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>游泳<br>　泳过程中通过调整呼吸，憋气，锻炼肺活量，增强体质，加快新陈代谢，血液循环加快，增强心肌功能。锻炼四肢及胸腰腹部肌肉，强身健体，提高机体适应温度、气候的能力，增强呼吸系统抗病能力。同时合理安全的游泳可以娱乐身心，增强意志力，瘦身减肥。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+					<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605190609.jpg"  alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>瑜伽<br>伽作为一种运动量不是很大，但却能使人得到充分锻炼的运动项目，平时经常坚持练瑜伽，对身体会产生明显的好处，如身体塑形、改善睡眠、促进血液循环、调节内分泌及改善情绪等。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605190600.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>健美操<br>健美操可以使身体发热，有利于提高体内的排泄功能，减少乳酸的积累。可以督促保持正确的身体姿势，使体格强健、形态优美。
+
+
+</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605190605.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>跳绳<br>跳绳由于作用时间短，消耗热量高，而且是有氧运动，所以可以很好的使脂肪燃烧，能够消耗脂肪，结实肌肉，达到减肥的目的。</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+
+				<div class="card">
+					<div class="cardbox">
+						<div class="imgbox">
+							<img src="图片/QQ图片20220605191156.jpg" alt="">
+						</div>
+						<div class="contenbox">
+							<div>
+								<p>仰卧起坐<br>做仰卧起坐首先会锻炼腰腹部的肌肉，增加腰腹力量；可以起到减肥的作用，特别是对于腰部和腹部有赘肉的人，长时间的仰卧起坐可以消耗掉腰腹部的脂肪，起到减肥的作用。
+</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		   <div class="flot">
+			    <a href="Untitled-1.html" target="_blank">返回</a>
+			   
+		   </div>
+	</body>
+</html>
